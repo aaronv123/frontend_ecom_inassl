@@ -1,0 +1,29 @@
+.dashboard-layout { display: grid; grid-template-columns: 2fr 1fr; gap: 12px; }
+.revenue { height: 264px; }
+.week-chart { height: 194px; display: grid; grid-template-columns: repeat(4,1fr); align-items: end; gap: 12px; }
+.week-column { height: 178px; display: grid; grid-template-rows: 26px 1fr 22px; align-items: end; text-align: center; }
+.week-column strong { font-size: 9px; }
+.week-track { height: 118px; display: flex; align-items: end; border-radius: 3px 3px 0 0; background: #e7f3df; }
+.week-track i { display: block; width: 100%; background: #d0edc7; border-radius: 3px 3px 0 0; }
+.week-column:nth-child(2) .week-track i { background: #bce5b4; }
+.week-column:nth-child(3) .week-track i { background: #e4f1a9; }
+.week-column.current .week-track i { background: #7950c9; }
+.week-column.current strong { color: #7950c9; }
+.week-column span { color: #858c87; font-size: 9px; }
+
+.stock-list { margin-top: 8px; display: flex; flex-direction: column; }
+.stock-list span { height: 42px; display: flex; justify-content: space-between; align-items: center; border-bottom: 1px solid rgba(255,255,255,.6); font-size: 10px; }
+.stock-list b:first-child { font-weight: 600; }
+.stock-list b:last-child { font-weight: 400; }
+.bottom-grid { margin-top: 12px; }
+.orders-panel { height: 226px; }
+
+@media (max-width: 900px) {
+  .dashboard-layout { grid-template-columns: 1fr; }
+}
+
+@media (max-width: 620px) {
+  .revenue { height: 240px; }
+  .table-row { grid-template-columns: .8fr 1fr 1.2fr .7fr; }
+  .bottom-grid .table-row > *:nth-child(3) { display: none; }
+}

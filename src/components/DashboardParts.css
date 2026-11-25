@@ -1,0 +1,61 @@
+.page { max-width: 1380px; margin: 0 auto; padding: 24px 34px 38px; }
+.page-title { min-height: 68px; display: flex; justify-content: space-between; align-items: flex-start; }
+.page-title h1 { margin: 0 0 5px; font-size: 29px; line-height: 1.05; letter-spacing: -1.2px; }
+.page-title p { margin: 0; color: #9a9f9b; font-size: 11px; }
+.small-button {
+  min-height: 34px;
+  border: 1px solid #dde3da;
+  border-radius: 7px;
+  background: #fff;
+  color: #3e433f;
+  padding: 0 12px;
+  font-size: 11px;
+}
+
+.metric-grid { display: grid; grid-template-columns: repeat(4, minmax(0,1fr)); gap: 12px; margin-bottom: 12px; }
+.metric, .panel {
+  background: #fff;
+  border: 1px solid #e7eae4;
+  border-radius: 8px;
+}
+.metric { height: 92px; padding: 14px 16px; }
+.metric:nth-child(1) { background: #c8eebd; }
+.metric > span { display: block; color: #737973; font-size: 11px; }
+.metric strong { display: block; margin: 7px 0 5px; font-size: 24px; letter-spacing: -1px; }
+.metric p { margin: 0; display: flex; align-items: center; gap: 6px; color: #6f756f; font-size: 8px; }
+.metric p b { font-weight: 400; }
+.trend { border-radius: 4px; background: #eff7ec; color: #518267; padding: 3px 5px; font-size: 8px; }
+
+.panel { min-width: 0; padding: 14px 16px; }
+.panel-head { height: 44px; display: flex; justify-content: space-between; }
+.panel-head h3 { margin: 0 0 3px; font-size: 14px; letter-spacing: -.2px; }
+.panel-head p { margin: 0; color: #8d948f; font-size: 9px; }
+.spotlight { background: #c9edc1; border: 0; position: relative; overflow: hidden; }
+.panel-link { border: 0; background: rgba(255,255,255,.78); border-radius: 5px; height: 30px; padding: 0 10px; font-size: 9px; color: #505650; }
+.spotlight > .panel-link { position: absolute; bottom: 14px; left: 16px; }
+
+.table { width: 100%; font-size: 9px; }
+.table-row { min-height: 42px; display: grid; grid-template-columns: 1fr 1.25fr 1.7fr 1fr .8fr; align-items: center; border-bottom: 1px solid #edf0ea; }
+.table-row span { color: #555b56; }
+.table-row b { color: #343936; }
+.table-head { min-height: 30px; color: #9da29e; border-bottom: 1px solid #e7eae4; }
+.table-head b { color: #9da29e; font-weight: 500; }
+.status { justify-self: start; border-radius: 12px; padding: 4px 8px; background: #f1edfa; color: #8068b1; }
+.status.delivered { background: #edf7ef; color: #548268; }
+.status.processing { background: #f1edfa; color: #8068b1; }
+.status.shipped { background: #eef3fc; color: #667da5; }
+
+@media (max-width: 900px) {
+  .page { padding: 20px 16px 32px; }
+  .spotlight { min-height: 220px; }
+  .metric-grid { grid-template-columns: repeat(2,1fr); }
+}
+
+@media (max-width: 620px) {
+  .page { padding: 16px 12px 24px; }
+  .page-title h1 { font-size: 21px; }
+  .page-title .small-button { min-width: 82px; }
+  .metric-grid { grid-template-columns: 1fr 1fr; gap: 8px; }
+  .metric { height: 82px; padding: 12px; }
+  .metric strong { font-size: 20px; }
+}

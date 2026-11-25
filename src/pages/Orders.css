@@ -1,0 +1,8 @@
+.orders-directory { min-height: 390px; }
+.orders-directory .catalog-tools { grid-template-columns: repeat(4,auto) 1fr; }
+.orders-directory .table-row { grid-template-columns: .7fr 1fr 1.2fr .7fr .7fr .7fr; min-height: 48px; }
+
+@media (max-width: 620px) {
+  .orders-directory .table-row { grid-template-columns: .7fr 1fr .9fr .7fr; }
+  .orders-directory .table-row > *:nth-child(3), .orders-directory .table-row > *:nth-child(5) { display: none; }
+}

@@ -1,0 +1,44 @@
+.top-nav {
+  height: 66px;
+  display: grid;
+  grid-template-columns: 170px 1fr 170px;
+  align-items: center;
+  padding: 0 34px;
+  background: #fff;
+  border-bottom: 1px solid #eaede7;
+}
+.logo { font-size: 14px; font-weight: 800; letter-spacing: -.5px; }
+.top-nav nav { display: flex; justify-content: center; align-items: center; gap: 30px; height: 100%; }
+.top-nav nav button {
+  height: 100%;
+  border: 0;
+  background: transparent;
+  color: #606560;
+  font-size: 12px;
+  position: relative;
+}
+.top-nav nav button.active { color: #914bed; }
+.top-nav nav button.active::after {
+  content: "";
+  position: absolute;
+  height: 2px;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: #914bed;
+}
+.account { justify-self: end; width: 36px; height: 36px; border: 1px solid #dde1da; border-radius: 50%; background: #fff; display: grid; place-items: center; }
+.account span { width: 15px; height: 15px; border: 1.5px solid #9ea49f; border-radius: 50%; position: relative; }
+.account span::after { content: ""; width: 7px; height: 4px; border: 1.5px solid #9ea49f; border-top: 0; border-radius: 0 0 8px 8px; position: absolute; bottom: -7px; left: 2px; }
+
+@media (max-width: 900px) {
+  .top-nav { grid-template-columns: 110px 1fr 60px; padding: 0 16px; }
+  .top-nav nav { gap: 12px; }
+}
+
+@media (max-width: 620px) {
+  .top-nav { height: 58px; grid-template-columns: 92px 1fr 44px; }
+  .top-nav nav { justify-content: flex-start; overflow-x: auto; gap: 16px; }
+  .top-nav nav button { flex: 0 0 auto; font-size: 10px; }
+  .account { width: 32px; height: 32px; }
+}
