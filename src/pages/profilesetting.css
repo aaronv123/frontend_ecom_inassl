@@ -1,0 +1,128 @@
+.profile-settings-page > .page-title {
+  justify-content: center;
+  text-align: center;
+}
+
+.profile-settings-card {
+  width: min(100%, 860px);
+  margin: 0 auto;
+  border: 1px solid #e7eae4;
+  border-radius: 9px;
+  background: #fff;
+  padding: 24px;
+}
+
+.profile-settings-heading {
+  display: flex;
+  align-items: center;
+  gap: 13px;
+  padding-bottom: 22px;
+  border-bottom: 1px solid #eaede7;
+}
+
+.profile-avatar {
+  width: 46px;
+  height: 46px;
+  display: grid;
+  flex: 0 0 auto;
+  place-items: center;
+  border-radius: 50%;
+  background: #f1edfa;
+  color: #7950c9;
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.profile-settings-heading h2 {
+  margin: 0 0 5px;
+  font-size: 15px;
+  letter-spacing: -.3px;
+}
+
+.profile-settings-heading p {
+  margin: 0;
+  color: #747b76;
+  font-size: 10px;
+}
+
+.profile-settings-form {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 20px 16px;
+  padding-top: 22px;
+}
+
+.profile-settings-form > label {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  color: #454b46;
+  font-size: 10px;
+  font-weight: 650;
+}
+
+.profile-settings-form input {
+  width: 100%;
+  height: 40px;
+  border: 1px solid #e1e5de;
+  border-radius: 6px;
+  outline: none;
+  background: #fff;
+  color: #262927;
+  padding: 0 11px;
+  font-size: 11px;
+}
+
+.profile-settings-form input::placeholder {
+  color: #a0a6a0;
+}
+
+.profile-settings-form input:focus {
+  border-color: #7950c9;
+  box-shadow: 0 0 0 3px rgba(121, 80, 201, .12);
+}
+
+.profile-settings-form input:read-only {
+  background: #f5f6f3;
+  color: #747b76;
+}
+
+.profile-settings-actions {
+  grid-column: 1 / -1;
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 4px;
+}
+
+.profile-settings-message {
+  grid-column: 1 / -1;
+  margin: 0;
+  color: #548268;
+  font-size: 10px;
+  text-align: right;
+}
+
+.profile-save-button {
+  min-height: 36px;
+  border: 0;
+  border-radius: 6px;
+  background: #262927;
+  color: #fff;
+  padding: 0 14px;
+  font-size: 10px;
+}
+
+.profile-save-button:hover {
+  background: #3b403c;
+}
+
+@media (max-width: 620px) {
+  .profile-settings-card {
+    padding: 18px;
+  }
+
+  .profile-settings-form {
+    grid-template-columns: 1fr;
+    gap: 16px;
+  }
+}

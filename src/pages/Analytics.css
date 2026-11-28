@@ -13,7 +13,7 @@
 .channel i b { display: block; width: 65.4%; height: 100%; background: #7950c9; border-radius: 8px; }
 .channel:nth-child(2) i b { width: 34.6%; }
 .channel small { color: #5f665f; font-size: 8px; }
-.insight { margin-top: 6px; min-height: 94px; border-radius: 7px; background: #c9edc1; padding: 12px; }
+.insight { margin-top: 1px; min-height: 94px; border-radius: 7px; padding: 1px; }
 .insight h3 { margin: 0 0 8px; font-size: 12px; }
 .insight p { margin: 0; font-size: 9px; line-height: 1.5; }
 .analytics-best { height: 170px; margin-top: 12px; }

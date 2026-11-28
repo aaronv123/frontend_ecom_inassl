@@ -21,7 +21,7 @@ function Home({ onNavigate }) {
             <h2>Your business at a glance.</h2>
             <p>Performance so far this month</p>
             <div className="seller-snapshot">
-              <div><strong>$48,620</strong><small>Revenue</small></div>
+              <div><strong>$8,620</strong><small>Revenue</small></div>
               <div><strong>64</strong><small>Orders</small></div>
               <div><strong>246</strong><small>Units in stock</small></div>
             </div>
